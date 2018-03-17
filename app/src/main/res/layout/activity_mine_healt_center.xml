@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/content_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:id="@+id/line"/>
+    <com.canplay.medical.view.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationRight_type="img"
+        app:navigationRight_img="@drawable/login_selector"
+        app:navigationTitle="健康关爱中心" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/linecolor"/>
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+        android:id="@+id/super_recycle_view"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:layout_moreProgress="@layout/view_more_progress"
+        app:recyclerClipToPadding="true"
+        app:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

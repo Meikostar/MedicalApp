@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.001dp"
+        android:id="@+id/line"/>
+<com.canplay.medical.view.NavigationBar
+    app:navigationTitle="菜单管理"
+    app:navigationRight_type="img"
+    app:navigationLeft_type="gone"
+    android:id="@+id/navigationBar"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <com.canplay.medical.view.RegularListView
+        android:layout_marginTop="3dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/rl_menu"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        style="@style/lv_content"/>
+</LinearLayout>

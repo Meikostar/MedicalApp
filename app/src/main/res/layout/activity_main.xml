@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <com.canplay.medical.view.NoScrollViewPager
+        android:layout_above="@+id/bnb_home"
+        android:id="@+id/viewpager_main"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.canplay.medical.view.BottonNevgBar
+        android:focusable="false"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:id="@+id/bnb_home"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+    <style name="popwin_anim">
+        <item name="android:windowEnterAnimation">@anim/popw_show</item>
+        <item name="android:windowExitAnimation">@anim/popw_hide</item>
+    </style>
+    <style name="ToolbarTextAppearanceTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/menu_background</item>
+    </style>
+    <!-- 进度条 -->
+    <style name="progressDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框  -->
+        <item name="android:windowIsFloating">true</item><!-- 是否悬浮在Activity上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item><!-- 背景透明  -->
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊  -->
+    </style>
+    <!-- 对话框样式 -->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 底部弹出动画样式 -->
+    <style name="AnimBottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <!--导航条-->
+    <declare-styleable name="NavigationBar">
+        <attr name="navigation_bg" format="color"></attr>
+
+        <attr name="navigationLeft_type" format="enum">
+            <enum name="gone" value="0"></enum>
+            <enum name="img" value="1"></enum>
+        </attr>
+        <attr name="navigationRight_type" format="enum">
+            <enum name="gone" value="0"></enum>
+            <enum name="img" value="1"></enum>
+            <enum name="txt" value="2"></enum>
+            <enum name="top" value="3"></enum>
+            <enum name="txts" value="4"></enum>
+        </attr>
+        <attr name="navigationTitle" format="string"></attr>
+        <attr name="navigationRight_txt" format="string"></attr>
+        <attr name="navigationRight_txt_color" format="color"></attr>
+        <attr name="navigationRight_img" format="reference"></attr>
+        <attr name="navigationLeft_img" format="reference"></attr>
+        <attr name="right_img" format="reference"></attr>
+    </declare-styleable>
+    <!-- 圆形ImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+<!-- listview stye-->
+    <style name="lv_content">
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <declare-styleable name="DrawableTextView">
+        <attr name="drawableHeight" format="dimension"/>
+        <attr name="drawableWidth" format="dimension"/>
+    </declare-styleable>
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popw_show</item>
+        <item name="android:windowExitAnimation">@anim/popw_hide</item>
+    </style>
+
+    <declare-styleable name="FlexboxLayout">
+    <attr name="flexDirection">
+        <enum name="row" value="0" />
+        <enum name="row_reverse" value="1" />
+        <enum name="column" value="2" />
+        <enum name="column_reverse" value="3" />
+    </attr>
+
+    <attr name="flexWrap">
+        <enum name="nowrap" value="0" />
+        <enum name="wrap" value="1" />
+        <enum name="wrap_reverse" value="2" />
+    </attr>
+
+    <!--
+        Omitting flex-flow property since it's reflected in the parent flex container.
+        Set the flexDirection and/or flexWrap to the parent flex container explicitly if you
+        want to use the flex-flow similar way to the web.
+     -->
+
+    <attr name="justifyContent">
+        <enum name="flex_start" value="0" />
+        <enum name="flex_end" value="1" />
+        <enum name="center" value="2" />
+        <enum name="space_between" value="3" />
+        <enum name="space_around" value="4" />
+    </attr>
+
+    <attr name="alignItems">
+        <enum name="flex_start" value="0" />
+        <enum name="flex_end" value="1" />
+        <enum name="center" value="2" />
+        <enum name="baseline" value="3" />
+        <enum name="stretch" value="4" />
+    </attr>
+
+    <attr name="alignContent">
+        <enum name="flex_start" value="0" />
+        <enum name="flex_end" value="1" />
+        <enum name="center" value="2" />
+        <enum name="space_between" value="3" />
+        <enum name="space_around" value="4" />
+        <enum name="stretch" value="5" />
+    </attr>
+
+
+</declare-styleable>
+    <!--自定义tag的点击条按钮-->
+    <declare-styleable name="Custom_TagBtn">
+        <attr name="btn_tag_txt" format="string"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="FlexboxLayout_Layout">
+        <attr name="layout_order" format="integer" />
+        <!-- Negative numbers are invalid. -->
+        <attr name="layout_flexGrow" format="float" />
+        <!-- Negative numbers are invalid. -->
+        <attr name="layout_flexShrink" format="float" />
+        <!--
+            The initial length in a percentage format relative to its parent. This is similar to the
+            flex-basis property in the original CSS specification.
+            (https://www.w3.org/TR/css-flexbox-1/#flex-basis-property)
+            But unlike the flex-basis property, this attribute only accepts a value in fraction
+            (percentage), whereas flex-basis property accepts width values such as 1em, 10px and
+            the 'content' string.
+            But specifying initial fixed width values can be done by specifying width values in
+            layout_width (or layout_height, varies depending on the flexDirection). Also the same
+            effect can be done by specifying "wrap_contnet" in layout_width (or layout_height) if
+            developers want to achieve the same effect as 'content'.
+            Thus, this attribute only accepts fraction values, which can't be done through
+            layout_width (or layout_height) for simplicity.
+        -->
+        <attr name="layout_flexBasisPercent" format="fraction" />
+        <!--
+            Omitting flex property since it's a shorthand for layout_flexGrow and layout_flexShrink
+            and layout_percentInParent (flex-basis in the original CSS spec).
+        -->
+
+        <attr name="layout_alignSelf">
+            <enum name="auto" value="-1" />
+            <!-- The values below need to match the values of alignItems -->
+            <enum name="flex_start" value="0" />
+            <enum name="flex_end" value="1" />
+            <enum name="center" value="2" />
+            <enum name="baseline" value="3" />
+            <enum name="stretch" value="4" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_time_select"
+    android:background="#661a1a1a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            >
+
+            <Button
+                android:id="@+id/but_tsw_cancel"
+                android:layout_width="67.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:text="@string/cancel"
+                android:textColor="@color/color9"
+
+                android:layout_gravity="left|center_vertical"/>
+
+            <Button
+                android:id="@+id/but_tsw_confirm"
+                android:layout_width="67.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11.5dp"
+                android:text="确定"
+
+                android:layout_gravity="right|center_vertical"/>
+
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/linecolor"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <com.canplay.medical.view.CycleWheelView
+                android:id="@+id/cwv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:layout_weight="1"/>
+
+            <com.canplay.medical.view.CycleWheelView
+                android:id="@+id/cwv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.canplay.medical.view.CycleWheelView
+                android:id="@+id/cwv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11.5dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

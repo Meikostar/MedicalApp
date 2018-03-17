@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height">
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:layout_width="19dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="7dp"
+
+            />
+        <ImageView
+            android:id="@+id/iv_alarm"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="19dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="12dp"
+
+            />
+        <TextView
+
+            android:id="@+id/navigationbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="牵手关心"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_big" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/linecolor"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+    <com.canplay.medical.view.scrollView.StickyScrollView
+        android:background="@color/content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.canplay.medical.view.banner.BannerView
+                android:id="@+id/bannerView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:bannerPageAlpha="1.0"
+                app:bannerPageMargin="8dp"
+                app:bannerPagePercent="0.8"
+                app:bannerPageScale="0.8"
+                app:bannerAnimScroll="true"
+                app:bannerAutoScroll="true"
+                app:bannerScrollDuration="4000"
+                app:bannerAnimDuration="1500"/>
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:id="@+id/ll_health"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="26dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginTop="7dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="健康提醒"
+                        android:textSize="11sp" />
+
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_care"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="26dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginTop="7dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="关爱中心"
+
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_equipment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="26dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="19dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginTop="7dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="智能设备"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ll_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="28dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="21dp"
+                            android:layout_height="19dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginTop="7dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp"
+                        android:gravity="center"
+                        android:text="附近药店"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:paddingLeft="8dp"
+                 android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="9dp"
+                android:text="每日健康提醒"
+                android:textSize="13sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/linecolor"/>
+            <com.canplay.medical.view.RegularListView
+                android:divider="#00000000"
+                android:dividerHeight="0dip"
+                android:listSelector="@android:color/transparent"
+                android:id="@+id/lv_info"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                style="@style/lv_content" />
+        </LinearLayout>
+    </com.canplay.medical.view.scrollView.StickyScrollView>
+
+
+</LinearLayout>

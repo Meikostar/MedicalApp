@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/content_bg">
+    <com.canplay.medical.view.NavigationBar
+        android:id="@+id/navigationbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationTitle="绑定手机号"
+        app:navigationRight_type="gone"/>
+
+    <LinearLayout
+
+        android:layout_below="@+id/tv_logo"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:text="你的手机号：18166365879"
+            android:textColor="@color/black"
+            android:layout_marginLeft="19dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/tv_change"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/login_selector"
+            android:gravity="center"
+            android:text="更换手机号"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

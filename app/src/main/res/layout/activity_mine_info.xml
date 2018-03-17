@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/content_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:id="@+id/line"/>
+    <com.canplay.medical.view.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationTitle="个人信息" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/linecolor"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_center"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="头像"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/slow_black"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+
+            android:id="@+id/iv_phone"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_name"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="姓名"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="13dp"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:text="张三"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp" />
+        <ImageView
+
+            android:src="@drawable/arrow_left"
+            android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="13dp"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linecolor"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_sex"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="姓别"
+            android:layout_weight="1"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:text="男"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp" />
+        <ImageView
+
+            android:src="@drawable/arrow_left"
+            android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="13dp"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linecolor"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_birth"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="出生年月"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_birth"
+            android:text="1999"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+
+            android:src="@drawable/arrow_left"
+            android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="13dp"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linecolor"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_area"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="地区"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/slow_black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+
+            android:src="@drawable/arrow_left"
+            android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="13dp"/>
+    </LinearLayout>
+
+</LinearLayout>

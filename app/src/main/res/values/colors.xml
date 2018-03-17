@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用颜色-->
+    <color name="gray">#E1E1E1</color>
+    <color name="red">#F90808</color>
+    <color name="yellow">#F1AC07</color>
+    <color name="yellows">#FFe616</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#1098f2</color>
+    <color name="green">#78bb4f</color>
+    <color name="orange">#FFA228</color>
+    <color name="e6">#e6e6e6</color>
+    <color name="da">#dadada</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="progress_color">#3F51B5</color>
+    <color name="progress_text_color">@color/white</color>
+    <color name="dominant_hue">#16B71B</color>
+    <color name="dominant_hue_dark">#108313</color>
+    <color name="white_dark">#b4ffffff</color>
+    <color name="dialog_bg">#88666666</color>
+    <color name="linecolor">#cccccc</color>
+    <color name="titles">#797979</color>
+    <color name="menu_background">@color/dominant_hue</color>
+    <color name="line_color">#f8f8f8</color>
+    <color name="title">#bfbfbf</color>
+    <color name="navibar_color">#ffffff</color>
+    <color name="text_default">@android:color/black</color>
+    <color name="slow_black">#333333</color>
+    <color name="color6">#666</color>
+    <color name="bottom">#949494</color>
+    <color name="color9">#999999</color>
+    <color name="hint_red">#ff4439</color>
+    <color name="color_primary_e3">#e3e3e3</color>
+    <color name="txt_blue">#2196f3</color>
+    <color name="txt_hint_color">#cdd1d4</color>
+    <color name="color_8290AF">#8290AF</color>
+    <color name="black">#000000</color>
+    <color name="red_cyc">#E51c23</color>
+    <color name="green_cyc">#27cd41</color>
+    <color name="org_cyc">#ffa900</color>
+    <color name="text_shad">#cccacc</color>
+    <color name="orange_f">#ffa900</color>
+    <color name="pink">#f8687e</color>
+
+    <color name="round_hui">#63605e</color>
+    <color name="round_half_balck">#41403e</color>
+    <color name="cycle_shade">#4f4f4f</color>
+    <color name="car_begin">#6d7473</color>
+    <color name="content_bg">#F3F3F3</color>
+</resources>

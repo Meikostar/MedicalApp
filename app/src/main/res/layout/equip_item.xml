@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="75.5dp">
+<LinearLayout
+    android:id="@+id/ll_bg"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="药盒"
+            android:textColor="@color/slow_black"
+            android:textSize="14.5sp"
+            />
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备编号：125424455"
+            android:textColor="@color/color9"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/arrow_left"
+        android:layout_width="25dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="14dp"/>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.45dp"
+        android:background="@color/linecolor"/>
+</LinearLayout>

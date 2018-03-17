@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/linecolor"
+        />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_nvg_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_checkbox_image1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="20dp"
+
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@color/bottom"
+                android:id="@+id/tv_checkbox_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="首页"
+                android:gravity="center"
+                android:textSize="10sp"/>
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ll_nvg_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_checkbox_image2"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="20dp"
+
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@color/bottom"
+                android:id="@+id/tv_checkbox_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="医生"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ll_nvg_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_checkbox_image3"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="20dp"
+
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@color/bottom"
+                android:id="@+id/tv_checkbox_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="健康数据"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/ll_nvg_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_checkbox_image4"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="20dp"
+
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="@color/bottom"
+                android:id="@+id/tv_checkbox_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="个人中心"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

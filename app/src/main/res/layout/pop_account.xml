@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@null"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/waim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/pop_change_psw"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="弹出消息"-->
+            <!--android:textColor="@color/black" />-->
+
+
+
+        <TextView
+            android:id="@+id/pop_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="重新绑定"
+            android:textColor="@color/red" />
+        <TextView
+            android:id="@+id/pop_login_out"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:padding="5dp"
+            android:text="退出程序"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="6dp"
+
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/black" />
+</LinearLayout>

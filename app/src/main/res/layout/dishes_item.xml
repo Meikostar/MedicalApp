@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+         android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:lines="1"
+        android:gravity="center"
+        android:id="@+id/tv_name"
+        android:textSize="15sp"
+        android:textColor="@color/slow_black"
+        android:layout_marginLeft="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:text="全部"
+        />
+    <View
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/linecolor"
+        />
+</LinearLayout>
